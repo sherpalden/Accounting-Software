@@ -1,0 +1,153 @@
+.bborder{border: 2px solid black;}
+
+/*for leader table slider checkbox*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*end leader table slider checkbox*/
+
+
+.LeaderImageHover{cursor: pointer;}
+#modalLoading{position: fixed; left: 45%; top: 45%; width: 100%; height: 100%; z-index: 9999;}
+
+.editLeaderPic{width: 150px; height: 150px; border: 1px solid #ddd; border-radius: 4px; padding: 5px; width: 150px;}
+
+.DealerHover{cursor: pointer;}
+
+/*******dropdown tree styling for category and account selection starts here...*********/
+
+.bmd-label-floating{
+  padding-left:10px;
+}
+
+.inputHolder{
+  background-color:pink;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.item{
+  height: 25px !important;
+  margin-top:5px;
+  padding:5px 5px !important;
+  margin-left:10px !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+
+}
+
+.list-group{
+  margin-bottom: 0px;
+}
+
+.item:hover{
+  background-color: lightgrey;
+}
+
+.mainCat{
+  box-sizing: border-box;
+
+  cursor:pointer !important;
+  padding-top:5px !important;
+
+  font-weight: 600;
+   background-color: lightblue; 
+}
+
+.subCat{
+  display: none;
+  font-weight: 400;
+  padding-left: 15px;
+
+}
+
+
+.subCatDisplay{
+  display: block;
+}
+
+#listHolder{
+  box-sizing: border-box;
+
+  position: absolute;
+  top: calc(50% + 17px );
+  width:100%;
+  max-width: 500px;
+}
+
+.purchaseCat{
+  margin:auto;
+  padding-left:0px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.purchaseList{
+  background-color: lightgrey;
+  list-style: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*******dropdown tree styling for category and account selection ends here...*********/

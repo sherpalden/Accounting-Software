@@ -1,0 +1,91 @@
+/*.borderr{border: 2px solid black;}*/
+.ProductAddRow{margin-bottom: 0.5%;}
+.ProductAddFirstCol{margin-top: 0.8%;}
+.ProductAddSecondCol{padding: 0px;}
+.loaderr{
+	left: 42%;
+	top: 140px !important;
+	position: relative; top: 90px; 
+	z-index: 1; 
+	border: 16px solid #f3f3f3;
+  	border-radius: 50%;
+  	border-top: 16px solid #3498DB;
+  	border-bottom: 16px solid #3498DB;
+  	width: 110px;
+  	height: 110px;
+  	-webkit-animation: spin 2s linear infinite;
+  	animation: spin 2s linear infinite;
+	}
+.JumbotormColor{background-color: #FDFDFD;}
+.DisableColor{background-color: #DDDEE0 !important; color: #ACACAC !important;}
+.NewOrderButton{width: 100%; height: 50px; margin-bottom: 5%; font-weight: bold; font-size: large!important; line-height: 38px;}
+.SaleRow{background-color: #FFD900; padding: 1%; border-radius: 3px;}
+.SalesDiv{text-align: center; font-size: 18px; padding-top: 3px; color: #013364;}
+.SalesBorder{border-right: 2px solid black;}
+.SaleAttrRow{background-color: #C7C7C7; padding: 0.5%; border-radius: 3px;}
+.SalesAttrDiv{text-align: center; font-size: 18px;}
+.SalesAttrPaddingTop{padding-top: 0.8%;}
+
+/*Tax Purchase Purchase*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*end Tax Purchase Purchase*/
+
